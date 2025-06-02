@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- ✅ FIXED TYPO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz Website HTML CSS JS</title>
     <link rel="stylesheet" href="styles8.css" />
@@ -21,7 +22,7 @@
       </header>
 
       <div class="container">
-        <!-- QUIZ SECTION -->
+        <!-- ✅ QUIZ SECTION -->
         <section class="quiz-section">
           <div class="quiz-box">
             <h1>Mind Quiz</h1>
@@ -29,20 +30,22 @@
               <span>Quiz Website Tutorial</span>
               <span class="header-score">Score: 0 / 25</span>
             </div>
+
             <h2 class="question-text">What is the name of the starter?</h2>
             <div class="option-list">
-              <div class="option">A. Darwaza Bandh</div>
-              <div class="option">B. Khuli Soch</div>
-              <div class="option">C. Parda Hai Parda</div>
-              <div class="option">D. Tum Hume Dekho</div>
+              <div class="option"><span>A. Darwaza Bandh</span></div>
+              <div class="option"><span>B. Khuli Soch</span></div>
+              <div class="option"><span>C. Parda Hai Parda</span></div>
+              <div class="option"><span>D. Tum Hume Dekho</span></div>
             </div>
+
             <div class="quiz-footer">
               <span class="question-total">1 of 25 Questions</span>
               <button class="next-btn">Next</button>
             </div>
           </div>
 
-          <!-- RESULT SECTION -->
+          <!-- ✅ RESULT BOX -->
           <div class="result-box">
             <h2>Quiz Result!</h2>
             <div class="percentage-container">
@@ -58,14 +61,14 @@
           </div>
         </section>
 
-        <!-- HOME SECTION -->
+        <!-- ✅ HOME SCREEN -->
         <section class="home">
           <div class="home-contact">
             <h1>Quiz Website</h1>
             <p>
               A quiz refers to a short test of knowledge, typically around 25
-              questions. Formats include multiple choice, true or false, and
-              short answers.
+              questions in length. Formats include multiple choice, true or false,
+              and short answers.
             </p>
             <button class="start-btn">Start Quiz</button>
           </div>
@@ -73,21 +76,21 @@
       </div>
     </main>
 
-    <!-- POPUP INFO -->
+    <!-- ✅ POPUP INFO -->
     <div class="popup-info">
       <h2>Quiz Guide</h2>
-      <span class="info">1. You will be presented with 25 questions</span><br />
-      <span class="info">2. Click Continue to start the quiz</span><br />
-      <span class="info">3. Read each question carefully</span><br />
-      <span class="info">4. Click "Next" to continue</span><br />
+      <span class="info">1. You will be presented with 25 questions</span>
+      <span class="info">2. Click Continue to start the quiz</span>
+      <span class="info">3. Read each question carefully</span>
+      <span class="info">4. Click "Next" to continue through the quiz</span>
       <span class="info">5. Your score will be shown at the end</span>
+
       <div class="btn-group">
         <button class="info-btn exit-btn">Exit Quiz</button>
         <a href="#" class="info-btn Continue-btn">Continue</a>
       </div>
     </div>
 
-    <!-- JS Files -->
     <script src="question.js"></script>
     <script src="script.js"></script>
   </body>
