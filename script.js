@@ -39,7 +39,7 @@ Continuebtn.onclick = () => {
     main.classList.remove('active');
     quizbox.classList.add('active');
 
-    // Shuffle questions when quiz starts
+    // Shuffle and reset
     questions = shuffleArray(questions);
 
     questionCount = 0;
@@ -98,7 +98,7 @@ nextBtn.onclick = () => {
 // DISPLAY QUESTION AND OPTIONS
 function showQuestions(index) {
     const questionText = document.querySelector('.question-text');
-    questionText.textContent = `${questionNumb}. ${questions[index].question}`;
+    questionText.textContent = `${questionNumb}. ${questions[index].question}`; // 🔥 FIXED here
 
     let optionTag = `
         <div class="option"><span>${questions[index].options[0]}</span></div>
@@ -140,19 +140,19 @@ function optionSelected(answer) {
     nextBtn.classList.add('active');
 }
 
-// DISPLAY QUESTION NUMBER (x of y)
+// DISPLAY QUESTION NUMBER (e.g., 7 of 25)
 function questionCounter(index) {
     const questionTotal = document.querySelector('.question-total');
     questionTotal.textContent = `${index} of ${questions.length} Questions`;
 }
 
-// DISPLAY SCORE IN HEADER
+// HEADER SCORE DISPLAY
 function headerScore() {
     const headerScoreText = document.querySelector('.header-score');
     headerScoreText.textContent = `Score: ${userScore} / ${questions.length}`;
 }
 
-// SHOW FINAL SCORE BOX
+// SHOW FINAL RESULT BOX
 function showResultBox() {
     quizbox.classList.remove('active');
     resultbox.classList.add('active');
