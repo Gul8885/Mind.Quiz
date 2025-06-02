@@ -86,8 +86,8 @@ goHomebtn.onclick = () => {
 nextBtn.onclick = () => {
     if (questionCount < questions.length - 1) {
         questionCount++;
-        showQuestions(questionCount);
         questionNumb++;
+        showQuestions(questionCount);
         questionCounter(questionNumb);
         nextBtn.classList.remove('active');
     } else {
@@ -98,7 +98,7 @@ nextBtn.onclick = () => {
 // DISPLAY QUESTION AND OPTIONS
 function showQuestions(index) {
     const questionText = document.querySelector('.question-text');
-    questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
+    questionText.textContent = `${questionNumb}. ${questions[index].question}`;
 
     let optionTag = `
         <div class="option"><span>${questions[index].options[0]}</span></div>
@@ -140,7 +140,7 @@ function optionSelected(answer) {
     nextBtn.classList.add('active');
 }
 
-// DISPLAY QUESTION NUMBER
+// DISPLAY QUESTION NUMBER (x of y)
 function questionCounter(index) {
     const questionTotal = document.querySelector('.question-total');
     questionTotal.textContent = `${index} of ${questions.length} Questions`;
