@@ -3,117 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz Website HTML CSS JS</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-      }
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <title>quiz Website HTML CSS JS</title>
+    <link rel="stylesheet" href="styles8.css" />
+  </head>
 
-      body {
-        color: #fff;
-        background: blueviolet;
-        overflow-x: hidden;
-      }
+  <body>
+    <main class="main">
+      <header class="header">
+        <a href="#" class="logo">Quiz.</a>
 
-      .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 20px 10%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 100;
-      }
+        <nav class="navbar">
+          <a href="#" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+      <div class="container">
+        <section class="quiz-section">
+          <div class="quiz-box">
+            <h1>Mind Quiz</h1>
+            <div class="quiz-header">
+              <span>Quiz Website Tutorial</span>
+              <span class="header-score">Score: 0 / 5</span>
+            </div>
 
-      .logo {
-        font-size: 32px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 700;
-        filter: drop-shadow(0 0 5px #09001d);
-      }
+            <h2 class="question-text">What is the name of the started?</h2>
+            <div class="option-list">
+              <div class="option">
+                <span>A.Darwaza bandh </span>
+              </div>
+              <div class="option">
+                <span>B.Khuli soch </span>
+              </div>
+              <div class="option">
+                <span>C.Parda hai parda </span>
+              </div>
+              <div class="option">
+                <span>D.Tum Hume dekho </span>
+              </div>
+            </div>
+            <div class="quiz-footer">
+              <span class="question-total">1 to 25 questions</span>
+              <button class="next-btn">Next</button>
+            </div>
+          </div>
 
-      .navbar a {
-        font-size: 18px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 500;
-        margin-left: 35px;
-        transition: 0.3s;
-      }
+          <div class="result-box">
+            <h2>Quiz Result!</h2>
+            <div class="percentage-container">
+              <div class="circular-progress">
+                <span class="progress-value">0%</span>
+              </div>
 
-      .navbar a:hover,
-      .navbar a.active {
-        color: #00ffff;
-      }
+              <span class="score-text">Your Score 0 out of 25</span>
+            </div>
+            <div class="buttons">
+              <button class="tryAgain-btn">Try Again</button>
+              <button class="gohome-btn">Go To Home</button>
+            </div>
+          </div>
+        </section>
 
-      .main {
-        width: 100%;
-        min-height: 100vh;
-        padding-top: 80px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+        <section class="home">
+          <div class="home-contact">
+            <h1>Quiz Website</h1>
+            <p>
+              A quiz refers to a short test of knowledge, typically around 25
+              questions in length, with question formats often including
+              multiple choice, fill in the blanks, true or false and short
+              answer.
+            </p>
+            <button class="start-btn">Start Quiz</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div class="popup-info">
+      <h2>Quiz Guide</h2>
+      <span class="info">1. You will be presented with in 25 question</span>
+      <span class="info">2. Click Continue Start the Quiz</span>
+      <span class="info">3. Read question and then answer </span>
+      <span class="info">4. After Click Next Show Multiple Question</span>
+      <span class="info">5. Check quiz result and your Score </span>
 
-      .container {
-        width: 100%;
-        max-width: 1200px;
-        padding: 20px;
-      }
-
-      .home {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 70vh;
-      }
-
-      .home-contact {
-        max-width: 600px;
-        text-align: center;
-      }
-
-      .home-contact h1 {
-        font-size: 48px;
-        font-weight: 700;
-        margin-bottom: 20px;
-      }
-
-      .home-contact p {
-        font-size: 16px;
-        margin-bottom: 30px;
-      }
-
-      .start-btn {
-        padding: 15px 30px;
-        background: blue;
-        border: none;
-        border-radius: 6px;
-        font-size: 18px;
-        color: #fff;
-        cursor: pointer;
-        transition: 0.3s;
-      }
-
-      .start-btn:hover {
-        background: #09001d;
-      }
-
-      .quiz-section {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .quiz-box,
-      .result-box {
-        width: 100%;
-        max-width:
+      <div class="btn-group">
+        <button class="info-btn exit-btn">Exit Quiz</button>
+        <a href="#" class="info-btn Continue-btn">Continue</a>
+      </div>
+    </div>
+    <script src="question.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
