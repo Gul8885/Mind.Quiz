@@ -15,7 +15,7 @@
 
 body {
   color: var(--text);
-  background: blueviolet;
+  background: rgb(0, 0, 0);
   overflow: hidden;
 }
 
